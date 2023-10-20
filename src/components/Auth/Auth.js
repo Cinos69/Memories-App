@@ -61,7 +61,7 @@ const Auth = () => {
 
     }
 
-    const googleFailure = (error) => console.log("Login Failed");
+    const googleFailure = (error) => console.log("Google-Login Failed! Please try again");
 
     return (
         <Container component="main" maxWidth="xs">

@@ -51,7 +51,7 @@ const Post = ({ post, setCurrentId }) => {                              ///destr
                     <Typography variant="body2" color="textSecondary" component="p">{post.message}</Typography>
                 </CardContent>
             </ButtonBase>
-                {(user?.result?.sub === post?.creator || user?.result?._id === post?.creator) && (
+            {(user?.result?.sub === post?.creator || user?.result?._id === post?.creator) && (
                     <div className={classes.overlay2}>
                         <Button style={{ color: 'white' }} size="small" onClick={() => setCurrentId(post._id)}>
                             <MoreVertIcon fontSize="medium" />
